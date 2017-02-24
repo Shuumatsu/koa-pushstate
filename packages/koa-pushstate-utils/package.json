@@ -1,0 +1,19 @@
+{
+  "name": "koa-pushstate-utils",
+  "version": "0.2.0",
+  "main": "dist/index.js",
+  "repository": "https://github.com/VanishingDante/koa-pushstate.git",
+  "author": "VanishingDante <VanishingDante@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "babel src -d dist -w -s",
+    "build": "babel src -d dist -s"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "eslint": "^3.16.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
