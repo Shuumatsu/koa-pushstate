@@ -1,6 +1,5 @@
 {
   "name": "koa-pushstate-middleware",
-  "version": "0.2.1",
   "main": "dist/index.js",
   "repository": "https://github.com/VanishingDante/koa-pushstate.git",
   "author": "VanishingDante <VanishingDante@gmail.com>",
@@ -21,5 +20,6 @@
   "devDependencies": {
     "babel-cli": "^6.23.0",
     "eslint": "^3.16.0"
-  }
+  },
+  "version": "0.2.3"
 }

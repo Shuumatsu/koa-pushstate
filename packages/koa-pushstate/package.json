@@ -1,6 +1,5 @@
 {
   "name": "koa-pushstate",
-  "version": "0.2.2",
   "repository": "https://github.com/VanishingDante/koa-pushstate.git",
   "author": "VanishingDante <VanishingDante@gmail.com>",
   "license": "MIT",
@@ -21,5 +20,6 @@
   "devDependencies": {
     "babel-cli": "^6.23.0",
     "eslint": "^3.16.1"
-  }
+  },
+  "version": "0.2.3"
 }

@@ -1,6 +1,5 @@
 {
   "name": "koa-pushstate-utils",
-  "version": "0.2.1",
   "main": "dist/index.js",
   "repository": "https://github.com/VanishingDante/koa-pushstate.git",
   "author": "VanishingDante <VanishingDante@gmail.com>",
@@ -15,5 +14,6 @@
   },
   "dependencies": {
     "lodash": "^4.17.4"
-  }
+  },
+  "version": "0.2.3"
 }
