@@ -1,6 +1,6 @@
 {
   "name": "koa-pushstate",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "repository": "https://github.com/VanishingDante/koa-pushstate.git",
   "author": "VanishingDante <VanishingDante@gmail.com>",
   "license": "MIT",
