@@ -15,11 +15,11 @@
     "detect-port": "^1.1.0",
     "koa": "next",
     "mime-types": "^2.1.14",
-    "koa-pushstate-utils": "^0.2.1"
+    "koa-pushstate-utils": "latest"
   },
   "devDependencies": {
     "babel-cli": "^6.23.0",
     "eslint": "^3.16.0"
   },
-  "version": "0.2.4"
+  "version": "0.2.5"
 }
