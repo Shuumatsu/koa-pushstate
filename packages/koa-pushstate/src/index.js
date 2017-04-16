@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import Koa from 'koa'
 import https from 'https'
 import path from 'path'
@@ -13,12 +15,18 @@ const opts = {
   cert: fs.readFileSync(path.resolve(__dirname, '../cert.pem'))
 }
 
-const directory = process.argv[2] || '.'
-app.use(pushState({ directory }))
+const root = process.argv[2] || '.'
+app.use(root, pushState.defaultResolveFilePath, {
+  setHeaders: (res, path, stat) => {
+    res.setHeader('Access-Control-Allow-Origin', '*')
+  },
+  index: path.join(root, 'index.html'),
+  fallthrough: false
+})
 
 const server = https.createServer(opts, app.callback())
 const runServer = port => {
-  server.listen(port)
+  server.listen(port, '0.0.0.0')
   console.log(chalk.yellow(`Server is running https://localhost:${port}`))
 }
 

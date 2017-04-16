@@ -8,13 +8,14 @@
     "bootstrap": "lerna bootstrap"
   },
   "devDependencies": {
-    "lerna": "2.0.0-beta.37",
+    "babel-eslint": "^7.1.1",
+    "babel-preset-node-env": "^0.1.0",
+    "eslint": "^3.19.0",
     "eslint-config-react-app": "^0.5.1",
     "eslint-plugin-flowtype": "^2.30.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.9.0",
-    "babel-eslint": "^7.1.1",
-    "babel-preset-node-env": "^0.1.0"
+    "lerna": "^2.0.0-rc.2"
   }
 }

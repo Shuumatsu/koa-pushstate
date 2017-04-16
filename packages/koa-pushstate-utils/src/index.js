@@ -8,7 +8,7 @@ export const errFirstCallbackToPromise = fn => {
         if (err) {
           reject(err)
           return
-        }
+        } 
 
         values.length > 1 ? resolve(values) : resolve(...values)
       }

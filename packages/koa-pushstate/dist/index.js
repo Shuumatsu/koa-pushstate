@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 'use strict';
 
 var _koa = require('koa');
@@ -40,12 +41,18 @@ var opts = {
   cert: _fs2.default.readFileSync(_path2.default.resolve(__dirname, '../cert.pem'))
 };
 
-var directory = process.argv[2] || '.';
-app.use((0, _koaPushstateMiddleware2.default)({ directory: directory }));
+var root = process.argv[2] || '.';
+app.use(root, _koaPushstateMiddleware2.default.defaultResolveFilePath, {
+  setHeaders: function setHeaders(res, path, stat) {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+  },
+  index: _path2.default.join(root, 'index.html'),
+  fallthrough: false
+});
 
 var server = _https2.default.createServer(opts, app.callback());
 var runServer = function runServer(port) {
-  server.listen(port);
+  server.listen(port, '0.0.0.0');
   console.log(_chalk2.default.yellow('Server is running https://localhost:' + port));
 };
 
